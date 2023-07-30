@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Extension Popup</title>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" href="popup.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1> 📚 Save Task</h1>
+    <div class="labels">
+        <i>Start Dates are compulsory.</i>
+    </div>
+    
+    <div id="result" class="labelsz"></div>
+    <div><button id="saveErrorButton" style="display:none ;">Save Error to File</button></div>
+
+    <label for="taskTitle" style="margin-top: 8px;">Task Title: <span style="color: red;">*</span></label>
+    <textarea type="text" class="tasktitle texarea" style="border-radius: 3px;" id="taskTitle" required></textarea>
+
+    <label for="description" style="margin-top:8px ;">Description:</label>
+    <textarea type="text" class="texarea" style="border-radius: 3px;margin-bottom:7px;" id="description"></textarea><br>
+
+    <div class="durationholder">
+        <div>
+            <span>
+                Duration:
+                <input type="number" style="border-radius: 5px;width: 60px;" id="duration">
+                hrs
+            </span>
+            <br>
+        </div>
+    </div>
+
+    <div class="selectholder cateholder">
+        <div>
+            <label for="category">Category: <span style="color: red;">*</span></label>
+            <select id="category" style="border-radius: 5px;background-color: #603b2c;" required>
+                <option value="IITM" style="background-color: #603b2c;">IITM</option>
+                <option value="APSIT" style="background-color: #6e3630;">APSIT</option>
+                <option value="General" style="background-color: #5a5a5a;">General</option>
+                <option value="Self Projects" style="background-color: #492f64;">Self Projects</option>
+                <option value="Professor Colab" style="background-color: #89632a;">Professor Colab</option>
+                <option value="Maths Selfstudy" style="background-color: #2b593f;">Maths Selfstudy</option>
+            </select><br><br>
+        </div>
+
+        <div>
+            <label for="taskType">Task Type: <span style="color: red;">*</span></label>
+            <select id="taskType" style="border-radius: 5px;background-color: #2b593f;" required>
+                <option value="Fixed" style="background-color: #2b593f;">Fixed</option>
+                <option value="Infinite" style="background-color: #89632a;">Infinite</option>
+                <option value="Scheduled" style="background-color: #492f64;">Scheduled</option>
+                <option value="Fixed & Scheduled" style="background-color: #69314c;">Fixed & Scheduled</option>
+            </select><br><br>
+        </div>
+
+        <div>
+            <label for="priority">Priority:<span style="color: red;">*</span></label>
+            <select id="priority" style="border-radius: 5px;background-color: #6e3630;" required>
+                <option value="high" style="background-color: #6e3630;"><span>🔴</span></option>
+                <option value="medium" style="background-color: #89632a;">🟡</option>
+                <option value="low" style="background-color: #28456c;">🔵</option>
+            </select>
+        </div>
+    </div>
+
+
+
+    <div class="selectholder">
+        <div>
+            <label for="dueDate">Due Date:</label>
+            <input type="datetime-local" style="border-radius: 5px;" id="dueDate"  required><br><br>
+        </div>
+
+        <div>
+            <label for="startDate">Start Date: <span style="color: red;">*</span></label>
+            <input type="date" style="border-radius: 5px;" id="startDate" required><br><br>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="selectholder">
+        <div class="selectholder2">
+            <div class="selectholder">
+                <div>
+                    <label for="week">This Week?</label>
+                </div>
+                <div class="rightyy">
+                    <input type="checkbox" class="larger" id="week"><br><br>
+
+                </div>
+            </div>
+            <div class="selectholder">
+                <div>
+                    <label for="month">This Month?</label>
+                </div>
+                <div class="rightyy">
+                    <input type="checkbox" class="larger" id="month"><br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="selectholder2">
+            <div class="selectholder">
+                <div>
+                    <label for="reminder"> Want a Reminder?</label>
+                </div>
+                <div class="rightyy">
+                    <input type="checkbox" class="larger" id="reminder"><br><br>
+                </div>
+            </div>
+
+            <div class="selectholder">
+                <div>
+                    <label for="deadline"> Deadline?</label>
+                </div>
+                <div class="rightyy">
+                    <input type="checkbox" class="larger" id="deadline"><br><br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="labels">
+        <i>Sure this is a valid Task?</i>
+    </div>
+
+
+    <button id="submitButton">Submit</button>
+
+
+
+</body>
+
+</html>

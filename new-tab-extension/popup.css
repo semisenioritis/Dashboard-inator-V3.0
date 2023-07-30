@@ -1,0 +1,207 @@
+
+body {
+    width: 336px; /* Set the desired width */
+    height: 450px; /* Set the desired height */
+    max-height: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    padding-top: 10px;
+    background-color: #191919;
+    color: #fff;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    font-size: 15px;
+    font-weight: 450;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+  h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 3px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  select,
+  input[type="date"],
+  input[type="number"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #333;
+    color: #fff;
+  }
+  input[type="datetime-local"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 15px;
+    margin-top: 2px;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #237226;
+  }
+  button#saveErrorButton {
+    background-color: #e03030;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 60px;
+    resize: none;
+    overflow-y: auto;
+    padding: 5px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    background-color: #333;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  .texarea::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tasktitle{
+    height: 40px;
+  }
+  #result {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 500;    
+  }
+  
+  .selectholder{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cateholder{
+    max-height: 75px;
+  }
+
+  .durationholder{
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  input.larger {
+    width: 20px;
+    height: 20px;
+  }
+
+.rightyy{
+    float: right;
+  }
+
+  .labels{
+    color: #808080;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .labelsz{
+    color: #ff1515;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .selectholder2{
+    display: flex;
+    flex-direction:column;
+  }
+
+/* div{
+  border: white 1px solid;
+} */
+
+
+
+
+
+
+
+
+
+
+  #priority option {
+    background-color: #444; /* Default background color for options */
+  }
+  
+  #priority option[value="high"] {
+    background-color: #6e3630; /* Red background for Option 1 */
+  }
+  
+  #priority option[value="medium"] {
+    background-color: #89632a; /* Green background for Option 2 */
+  }
+  
+  #priority option[value="low"] {
+    background-color: #28456c; /* Blue background for Option 3 */
+  }
+
+
+  #taskType option {
+    background-color: #444; /* Default background color for options */
+  }
+  
+  #taskType option[value="Fixed"] {
+    background-color: #2b593f; /* Red background for Option 1 */
+  }
+  
+  #taskType option[value="Infinte"] {
+    background-color: #89632a; /* Green background for Option 2 */
+  }
+  
+  #taskType option[value="Scheduled"] {
+    background-color: #492f64; /* Blue background for Option 3 */
+  }  
+  #taskType option[value="Fixed_&_Scheduled"] {
+    background-color: #69314c; /* Blue background for Option 3 */
+  }   
+
+
+  #category option {
+    background-color: #444; /* Default background color for options */
+  }
+  
+  #category option[value="IITM"] {
+    background-color: #603b2c; /* Red background for Option 1 */
+  }
+  
+  #category option[value="APSIT"] {
+    background-color: #6e3630; /* Green background for Option 2 */
+  }
+  
+  #category option[value="General"] {
+    background-color: #5a5a5a; /* Blue background for Option 3 */
+  }  
+  #category option[value="Self_Projects"] {
+    background-color: #492f64; /* Blue background for Option 3 */
+  }    
+  #category option[value="Professor_Colab"] {
+    background-color: #89632a; /* Blue background for Option 3 */
+  }  
+  #category option[value="Maths_Selfstudy"] {
+    background-color: #2b593f; /* Blue background for Option 3 */
+  }   
