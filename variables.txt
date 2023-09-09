@@ -1,0 +1,191 @@
+Appscript Codes:
+    Daily Populator:
+
+        %%events_from_cal%%
+        - category name for events from calendar. this needs to be included in the categores later too 
+        somehow
+
+
+        %%name_of_main_google_calendar%%
+        - name of main google calendar. replace this iitm email if u are from iitm to get events from gmail populated here
+
+        %%major_database_id%%
+        - id of major database spreadsheet
+
+        %%major_database_id%%
+        - id of major database spreadsheet
+
+        %%minor_database_id%%
+        - id of minor database spreadsheet
+    --------------------------------------------------------------------------------------
+
+
+    Dashboard Endpoint: 
+
+        %%minor_database_id%%
+        - id of minor database spreadsheet
+
+        %%minor_database_id%%
+        - id of minor database spreadsheet
+    --------------------------------------------------------------------------------------
+
+
+    New Task Handler:
+
+        %%major_database_id%%
+        - id of major database spreadsheet
+
+        %%cal_to_which_events_get_populated%%
+        - this is the gcal where the events get populated from dashboardinator
+
+        %%cal_which_is_deadline_cal%%
+        - this cal is the holder for all deadlines
+
+        %%cal_that_is_reminder_cal%%
+        - this cal is the holder for all reminders and notifications that you want to get
+
+        %%minor_database_id%%
+        - id of minor database spreadsheet
+    --------------------------------------------------------------------------------------
+
+
+    Task Deleter:
+
+        %%minor_database_id%%
+        - id of minor database spreadsheet
+
+        %%major_database_id%%
+        - id of major database spreadsheet
+
+        %%major_database_id%%
+        - id of major database spreadsheet
+    --------------------------------------------------------------------------------------
+
+
+    Task Snoozer:
+
+        %%minor_database_id%%
+        - id of minor database spreadsheet
+
+        %%major_database_id%%
+        - id of major database spreadsheet
+
+        %%major_database_id%%
+        - id of major database spreadsheet
+    --------------------------------------------------------------------------------------
+
+Popup.html
+
+    %%populate_html_code_for_req_categories%%
+    - this is the html code for the categories that you want to be populated in the popup
+    eg
+    <option value="IITM" style="background-color: #603b2c;">IITM</option>
+    <option value="APSIT" style="background-color: #6e3630;">APSIT</option>
+    <option value="General" style="background-color: #5a5a5a;">General</option>
+    <option value="Self Projects" style="background-color: #492f64;">Self Projects</option>
+    <option value="Professor Colab" style="background-color: #89632a;">Professor Colab</option>
+    <option value="Maths Selfstudy" style="background-color: #2b593f;">Maths Selfstudy</option>
+
+--------------------------------------------------------------------------------------
+
+Popup.css
+
+    %%add_custom_code_for_category_css%%
+    - this is the css code for the categories that you want to be populated in the popup
+    eg
+    #category option[value="IITM"] {
+    background-color: #603b2c; /* Red background for Option 1 */
+    }
+
+    #category option[value="APSIT"] {
+    background-color: #6e3630; /* Green background for Option 2 */
+    }
+
+    #category option[value="General"] {
+    background-color: #5a5a5a; /* Blue background for Option 3 */
+    }  
+    #category option[value="Self_Projects"] {
+    background-color: #492f64; /* Blue background for Option 3 */
+    }    
+    #category option[value="Professor_Colab"] {
+    background-color: #89632a; /* Blue background for Option 3 */
+    }  
+    #category option[value="Maths_Selfstudy"] {
+    background-color: #2b593f; /* Blue background for Option 3 */
+    }   
+--------------------------------------------------------------------------------------
+
+
+Popup.js
+
+    %%appscript_endpoint_to_push_data_towards%%
+    - this is the appscript endpoint to which the data is to be pushed from the popup
+
+--------------------------------------------------------------------------------------
+Manifest.json
+
+    %%which_gcal_should_be_killed%%
+    - which user gcal is to be sacrificed for the events to be populated from dashboardinator
+    - demo "https://calendar.google.com/calendar/u/1/*"
+--------------------------------------------------------------------------------------
+
+
+Content.js
+
+
+    Newtab.css
+
+        %%category_classes_of_new_tab%%
+        - this is the css code for the categories that you want to be populated in the new tab
+        eg
+        .category-iitm{
+            background-color: #603b2c;
+        }
+        .category-apsit{
+            background-color: #6e3630;
+        }
+        .category-general{
+            background-color: #5a5a5a;
+        }
+        .category-projects{
+            background-color: #492f64;
+        }
+        .category-prof-colab{
+            background-color: #89632a;
+        }
+        .category-maths{
+            background-color: #2b593f;
+        }  
+    --------------------------------------------------------------------------------------
+    
+    Header.html
+
+        %%gmail_you_want_to_link_to%%
+        - this is the gmail you want to link to in the new tab
+        - demo "https://mail.google.com/mail/u/1/#inbox"
+
+        %%gcal_i_want_to_link_to%%
+        - demo "https://calendar.google.com/calendar/u/2/r"  
+    --------------------------------------------------------------------------------------
+
+    %%task_deleter_endpoint%%
+    - this is the appscript endpoint that perm deletes a task
+
+    %%task_snoozer_endpoint%%
+    - this is the appscript endpoint that snoozes a task
+
+    %%dashboard_populator_endpoint%%
+    - this is the appscript endpoint that populates the dashboard
+
+    %%category_classes_dictionary_of_new_tab%%
+    - this is the dictionary of the categories 
+    eg
+    "IITM": "category-iitm",
+    "APSIT": "category-apsit",
+    "General": "category-general",
+    "Self Projects": "category-projects",
+    "Professor Colab": "category-prof-colab",
+    "Maths Selfstudy": "category-maths",    
+
+    
+

@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+   
+    "name": "Rasengan",
+    "version": "1.0.0",
+    "description": "Modify Gcal and inject my own task manager",
+    "content_scripts": [{
+      "js": ["content.js", "apexcharts.min.js"],
+      "matches": ["%%which_gcal_should_be_killed%%"]
+    
+    }],
+    "chrome_url_overrides": {
+      "newtab": "redirect.html"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "img/check-circle_16.png",
+        "48": "img/check-circle_48.png",
+        "128": "img/check-circle_128.png"
+      }
+    },
+      "icons": {
+        "16": "img/check-circle_16.png",
+        "48": "img/check-circle_48.png",
+        "128": "img/check-circle_128.png"
+      },
+      "permissions": [
+          "tabs",
+          "scripting",
+          "activeTab"
+        ],      
+        "host_permissions": ["http://*/*", "https://*/*"]    
+   
+  }
