@@ -12,5 +12,16 @@ Well 'nuf talk, the gist of the project is that I use a custom-built popup brows
 
 
 Demo:
-![image](https://github.com/semisenioritis/Dashboard-inator-V3.0/assets/89476245/606b8fdb-db2d-4063-9958-3271401ff5f4)
+![image](https://github.com/semisenioritis/Dashboard-inator-V3.0/assets/89476245/06dca7c3-37c4-4dc7-a6ef-09dee45445b6)
 
+
+
+Steps to use:
+
+1. Create and setup the Gsheets
+2. Setup Gcal and create required calendars
+3. Run main.py and fill in req details
+4. Use generated appscript code to to deploy 5 endpoints
+5. Create 2 triggers
+6. Enter endpoints into main.py
+7. Deploy generated extension
