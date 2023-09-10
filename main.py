@@ -416,50 +416,53 @@ cal_cat_name_entry = ttk.Entry(form_frame, width=40)  # Create an input field fo
 cal_cat_name_entry.grid(column=1, row=3, padx=5, pady=5, sticky=tk.W)  # Place the input field in the grid
 cal_cat_name_entry.insert(0, 'case sensitive')
 
+another_label = ttk.Label(form_frame, text="Remember to add add this category below too with corresponding color", font=("TkDefaultFont", 8))  # Create a bold heading
+another_label.grid(column=0, row=4, columnspan=2, pady=10)  # Place the heading label in the grid
+
 
 
 major_db_id = ttk.Label(form_frame, text="Major Database Id:")  # Create a label for Name
-major_db_id.grid(column=0, row=4, sticky=tk.W)  # Place the label in the grid
+major_db_id.grid(column=0, row=5, sticky=tk.W)  # Place the label in the grid
 
 major_db_id_entry = ttk.Entry(form_frame, width=40)  # Create an input field for Name
-major_db_id_entry.grid(column=0, row=5, padx=5, pady=5, sticky=tk.W)  # Place the input field in the grid
+major_db_id_entry.grid(column=0, row=6, padx=5, pady=5, sticky=tk.W)  # Place the input field in the grid
 
 
 
 minor_db_id = ttk.Label(form_frame, text="Minor Database Id:")  # Create a label for Name
-minor_db_id.grid(column=1, row=4, sticky=tk.W)  # Place the label in the grid
+minor_db_id.grid(column=1, row=5, sticky=tk.W)  # Place the label in the grid
 
 minor_db_id_entry = ttk.Entry(form_frame, width=40)  # Create an input field for Name
-minor_db_id_entry.grid(column=1, row=5, padx=5, pady=5, sticky=tk.W)  # Place the input field in the grid
+minor_db_id_entry.grid(column=1, row=6, padx=5, pady=5, sticky=tk.W)  # Place the input field in the grid
 
 
 cal_1_id = ttk.Label(form_frame, text="1. Main calendar Id:")  # Create a label for Name
-cal_1_id.grid(column=0, row=6, sticky=tk.W)  # Place the label in the grid
+cal_1_id.grid(column=0, row=7, sticky=tk.W)  # Place the label in the grid
 
 cal_1_id_entry = ttk.Entry(form_frame, width=40)  # Create an input field for Name
-cal_1_id_entry.grid(column=1, row=6, padx=5, pady=5, sticky=tk.W)  # Place the input field in the grid
+cal_1_id_entry.grid(column=1, row=7, padx=5, pady=5, sticky=tk.W)  # Place the input field in the grid
 cal_1_id_entry.insert(0, 'all events you add populate here')
 
 cal_2_id = ttk.Label(form_frame, text="2. Deadline calendar Id:")  # Create a label for Name
-cal_2_id.grid(column=0, row=7, sticky=tk.W)  # Place the label in the grid
+cal_2_id.grid(column=0, row=8, sticky=tk.W)  # Place the label in the grid
 
 cal_2_id_entry = ttk.Entry(form_frame, width=40)  # Create an input field for Name
-cal_2_id_entry.grid(column=1, row=7, padx=5, pady=5, sticky=tk.W)  # Place the input field in the grid
+cal_2_id_entry.grid(column=1, row=8, padx=5, pady=5, sticky=tk.W)  # Place the input field in the grid
 cal_2_id_entry.insert(0, 'Deadline events populate here')
 
 
 cal_3_id = ttk.Label(form_frame, text="3. Reminder calendar Id:")  # Create a label for Name
-cal_3_id.grid(column=0, row=8, sticky=tk.W)  # Place the label in the grid
+cal_3_id.grid(column=0, row=9, sticky=tk.W)  # Place the label in the grid
 
 cal_3_id_entry = ttk.Entry(form_frame, width=40)  # Create an input field for Name
-cal_3_id_entry.grid(column=1, row=8, padx=5, pady=5, sticky=tk.W)  # Place the input field in the grid
+cal_3_id_entry.grid(column=1, row=9, padx=5, pady=5, sticky=tk.W)  # Place the input field in the grid
 cal_3_id_entry.insert(0, 'Reminder notifs populate here')   
 
 gcal_to_populate = ttk.Label(form_frame, text="Gcal to Sacrifice")  # Create a label for Name
-gcal_to_populate.grid(column=0, row=9, sticky=tk.W)  # Place the label in the grid
+gcal_to_populate.grid(column=0, row=10, sticky=tk.W)  # Place the label in the grid
 
 gcal_to_populate_entry = ttk.Entry(form_frame, width=40)  # Create an input field for Name
-gcal_to_populate_entry.grid(column=1, row=9, padx=5, pady=5, sticky=tk.W)  # Place the input field in the grid
+gcal_to_populate_entry.grid(column=1, row=10, padx=5, pady=5, sticky=tk.W)  # Place the input field in the grid
 gcal_to_populate_entry.insert(0, 'https://calendar.google.com/calendar/u/0/r') 
 
 
@@ -469,10 +472,10 @@ gcal_to_populate_entry.insert(0, 'https://calendar.google.com/calendar/u/0/r')
 
 # Create a button to add new entries
 add_button = ttk.Button(form_frame, text="Add Category", command=add_input)
-add_button.grid(column=0, row=10, columnspan=2, pady=10)
+add_button.grid(column=0, row=11, columnspan=2, pady=10)
 
 # Initialize entry count
-entry_count = 11
+entry_count = 12
 actual_entry_count = 0
 master_dict_1 = {}
 master_dict_2 = {}
